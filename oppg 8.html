@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -18,22 +18,38 @@
         
         }
         .style4 {
-            border-style: solid; border-color: blue
+            border-style: solid; border-color: blue; border-radius: 7px
         
         }
         .style5 {
             text-decoration: underline;
         
         }
+        
+        
+        /*.style6 {
+            .bla:after {
+                content: 'whatever it is you want to add';
+                
+        
+             }*/
     </style>
 </head>
 <body>
-    <div id="bla">Text example</div>
+    <div id="bla">Text example</div><br /><br /><br />
+    <div>background color</div>
     <input id="chk1" type="checkbox" onchange="toggleStyle1()" />
+    <div>change font</div>
     <input id="chk2" type="checkbox" onchange="toggleStyle2()" />
+    <div>align center</div>
     <input id="chk3" type="checkbox" onchange="toggleStyle3()" />
+    <div>border</div>
     <input id="chk4" type="checkbox" onchange="toggleStyle4()" />
+    <div>underline text</div>
     <input id="chk5" type="checkbox" onchange="toggleStyle5()" />
+    <!--<div>change text</div>-->
+    <!--<input id="chk6" type="checkbox" onchange="toggleStyle6()" />-->
+
     <script>
         function toggleStyle1() {
             var isChecked = document.getElementById('chk1').checked;
@@ -55,10 +71,14 @@
             var isChecked = document.getElementById('chk5').checked;
             document.getElementById('bla').classList.toggle('style5', isChecked);
         }
-        
+        //function toggleStyle6() {
+        //    var isChecked = document.getElementById('chk6').checked;
+        //    document.getElementById('bla').classList.toggle('style6', isChecked);
+        //}
+
         var divElement = document.getElementById('bla');
-        
-        
+
+
     </script>
 </body>
 </html>
